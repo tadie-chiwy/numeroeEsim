@@ -256,7 +256,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     h5{font-size: larger;color: rgb(0, 138, 210);margin: 30px 0;}
 }
 // areas
-.areas{margin: 40px 0;
+.areas{margin: 40px 0px;
     .row{
         display: flex;justify-content: space-between;
         .col{
@@ -272,10 +272,19 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .cards{
         display: flex;flex-direction: row;justify-content: space-between; align-items: center;
         .card{
-            margin: 0 10px;display: flex;flex-direction: column;justify-content: center; align-items: center;
+            margin: 0 10px;display: flex;flex-direction: column;justify-content: center; align-items: center; border: solid 1px rgba(128, 128, 128, 0.553); border-bottom-right-radius:30px ; background-color: rgb(245, 245, 245);
             .btn{background-color: rgb(8, 189, 93);}
             h5{font-weight: bold;font-size: x-large;text-align: center;}
         }
+    }
+}
+// footer
+
+.footer{
+    .row{
+       .link{
+        a{font-size: x-large;color: blue;}
+       }
     }
 }
    
