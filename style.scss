@@ -526,6 +526,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
      #za{display: none;}
 }
+	.top{
+		.cards{
+			display:flex;flex-direction:row;
+		}
+	}
 
 // all
 .all{
