@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+     font-family: "rennes";
+    font-weight: 50;
 }
 ol, ul {
 	list-style: none;
@@ -106,7 +108,7 @@ table {
             .eng{display: none;}
 ul{display: none;}
 .menu{
-    cursor: pointer;display: inline-block; position: absolute; top: 0%; left: 87%; 
+    cursor: pointer;display: inline-block; position: absolute; top: 0%; left: 87%; display: none;
     .bar1,.bar2,.bar3{
         width: 35px;height: 5px;background-color: black;margin: 6px 0;
 
@@ -252,10 +254,64 @@ ul{display: none;}
     }
 }
 
-.tr{
+.tr{margin: 30px 0px;
     .trend{
-        display: flex;flex-direction: column;justify-content: center; align-items: center;
+        display: none;
     }
+    #coco{
+       
+        a{text-align: center;text-decoration: none; margin-top: 20px;color: rgb(0, 138, 210);font-size: large;}
+        .d{
+            display: flex; flex-direction: row;
+            .j{
+                margin: 0 10px; border: 1px solid transparent; background-color: rgb(246, 250, 255); width: 50%;height: 40px; border-radius: 45px; padding: 10px;
+            }
+        }
+    }
+}
+
+// top
+.top{
+    margin: 30px 0px;
+    .cards{
+        display: flex;flex-direction: column;justify-content: center; align-items: center;
+        .card{
+            margin: 10px; border: solid 1px grey; border-radius: 20px;
+            h5{text-align: center;font-size: larger;font-weight: bold;}
+            .go{
+                border: solid 1px transparent;width: 70%;background-color: rgb(33, 211, 77);height: 40px; border-radius: 45px; display: flex; justify-content: center; align-items: center;margin-left: 43px;
+                a{color: white;font-weight: bold;font-size: x-large;}
+            }
+
+        }
+    }
+}
+
+// all
+.all{
+    h2{font-size: larger;}
+    #btn{
+        margin-left: 20%;width: 60%;margin-top: 30px; margin-bottom: 20px;
+    }
+    .countries{
+        display: flex;flex-direction: column;justify-content: flex-start;align-items: center;
+        .one{
+            display: flex;flex-direction: row;justify-content: flex-start;align-items: center;width: 100%; height: 80px; border: solid 1px transparent; background-color: rgb(245, 245, 245); border-radius: 24px; margin: 10px 0px;
+            .img{
+                width: 65px;height: 65px; margin-left: 20px; border: solid 1px transparent; border-radius: 40px;
+                img{width: 100%;}
+                
+
+            }
+            a{margin-left: 20px;font-size: x-large;text-decoration: none;color: rgb(77, 77, 77);}
+        }
+        
+    }
+}
+
+// footer
+.footer{
+    display: none;
 }
 
 
@@ -318,7 +374,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     // banner
 
     .banner{
-            header{background-image: url(./img/world-banner.webp);
+            header{background-image: url(./img/world-banner.webp); border: solid 1px transparent; border-bottom-right-radius: 300px;border-bottom-left-radius: 300px;
                 h1{font-size: 50px;padding: 40px 0px;}
                 .pp{
                     h4{font-size: xx-large;}
@@ -412,6 +468,80 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         display: flex;flex-direction: row;
     }
    }
+//    footer
+
+.footer{
+    display: inline-block;margin: 30px 0; background-color: rgb(248, 248, 248); padding: 70px; border: solid 1px transparent; border-top-right-radius: 100px;border-top-left-radius: 100px; width: 100%; margin-left: 5px;
+
+    .row{
+        #first{
+            p{color: rgb(84, 84, 84);}
+            .link{
+                margin: 10px;
+                i{margin-left: 20px;color: rgb(0, 138, 210);}
+            }
+        }
+        #sec{
+            a{color: rgb(84, 84, 84);text-decoration: none;}
+        }
+        #sec:hover{
+            a{color: rgb(0, 138, 210);text-decoration: underline;}
+        }
+        #third{
+            display: flex;flex-direction: column;justify-content: flex-start; align-items: flex-start;
+            a{margin: 10px;color: rgb(84, 84, 84);text-decoration: none;}
+            a:hover{text-decoration: underline;color: rgb(0, 138, 210);}
+        }
+        #forth{
+            h4{font-size: x-large;color: rgb(77, 77, 77);}
+            display: flex;flex-direction: column;
+            .dw{
+                display: flex;flex-direction: row;justify-content: start;align-items: center; border: 1px solid rgb(248, 248, 248);border-radius: 45px; background-color: white; margin: 10px;
+                .img{
+                    width: 50px;height: 50px;border: solid white 1px;border-radius: 90px; background-color: rgb(248, 248, 248); display: flex; justify-content: center; align-items: center; margin-left: 15px;
+                    img{width: 50%;}
+                }
+                a{margin-left: 19px ;color: rgb(77, 77, 77);text-decoration: none;span{font-weight: bold;margin-top: 5px;}}
+            }
+            .dw:hover{
+                background-color: rgb(0, 139, 210);
+                .img{background-color: white;}
+                a{color: white;font-size: large;}
+            }
+
+        }
+    }
+}
+
+.tr{
+    .trend{
+        display: block; display: flex; flex-direction: row; justify-content: center; align-items: center;
+        .t{
+            width: 15%;height: 40px; border: 1px solid rgb(230, 248, 255); border-radius: 45px; background-color: white; display: flex; justify-content: center; align-items: center;
+            a{color: black;text-decoration: none;font-size: large;}
+        }
+        #blue{background-color: rgb(229, 247, 255);a{color: rgb(0, 138, 210);}}
+
+       
+    }
+     #za{display: none;}
+}
+
+// all
+.all{
+    #btn{
+        width: 15%;margin-left: 40%;
+    }
+    .countries{
+        display: flex;flex-direction: row;justify-content: center; align-items: center; margin: 30px 0px;
+        .one{
+            margin: 0px 10px;
+            .img{
+                margin-top: 20px;
+            }
+        }
+    }
+}
 
 
     }
@@ -435,4 +565,5 @@ Custom media queries
 @media (max-width: 950px) { 
 
 }
+
 
